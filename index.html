@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson21</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <form id="registration-form">
+        <div class="form-group">
+            <label for="personal-number"> Personal Number </label>
+            <input type="text" id="personal-number" name="personal-number" required pattern="\d{11}" placeholder="Enter 11-digit ID">
+            <small class="message"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="email"> Email </label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <small class="message"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="password"> Password </label>
+            <input type="password" id="password" name="password" required minlength="6" placeholder="Enter password">
+            <small class="message"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="age"> Age </label>
+            <input type="number" id="age" name="age" required min="1" max="20" placeholder="Enter age">
+            <small class="message"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="phone"> Phone </label>
+            <input type="text" id="phone" name="phone" required pattern="\d{9}" placeholder="Enter 9-digit phone number">
+            <small class="message"></small>
+        </div> 
+
+        <button type="submit"> Register </button>
+    </form>
+
+
+        <div id="success-popup" class="popup hidden">
+            <div class="popup-content">
+                <p>✅ Form submitted successfully!</p>
+            <button id="close-popup">Close</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#registration-form{
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#succes-dialog{
+    border: none;
+    border-radius: 12px;
+    padding: 20px 30px;
+    background-color: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#succes-dialog p{
+    font-size: 16px;
+    margin-bottom: 15px;
+   
+}
+
+#succes-dialog.close{
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#succes-dialog .close:hover{
+    background-color: aquamarine;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input:focus{
+    border-color: #16304e;
+    outline: none;
+}
+
+.form-group.message{
+    font-size: 12px;
+    margin-top: 3px;
+    color: #e74c3c;
+    display: block;
+}
+
+.form-group.success input{
+    border-color: cadetblue;
+}
+
+.form-group.error input{
+    border-color: red;
+}
+
+button[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover{
+    background-color: lightseagreen;
+}
+
+#success-popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#success-popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#success-popup .popup-content {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#success-popup p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#success-popup button {
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#success-popup button:hover {
+    background-color: lightseagreen;
+}
+
+.hidden {
+    display: none;
+}
+
